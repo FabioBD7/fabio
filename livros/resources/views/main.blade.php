@@ -7,7 +7,10 @@
     <title>section('title') Exemplo @show</title>
 </head>
 <body>
-<h1>teste de construção html</h1>    
+<h1>exemplo template, do arquivo  main.blade.php  </h1>
+<br />
+<br />
+
 @yield('content')
 </body>
 </html>

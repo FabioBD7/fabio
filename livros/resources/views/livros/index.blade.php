@@ -1,4 +1,10 @@
 @extends('main')
 @section('content')
-  Não há livros cadastrados nesse sistema ainda!
+@forelse ($livros as $livro)
+    <li>{{ $livro->titulo }}</li>
+    <li>{{ $livro->autor }}</li>
+    <li>{{ $livro->isbn }}</li>
+@empty
+    Não há livros cadastrados
+@endforelse
 @endsection

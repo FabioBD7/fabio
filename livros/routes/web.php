@@ -22,9 +22,9 @@ Route::get('/', function () {
 
 Route::get('/livros', function ()
 {
-    echo "não existem livros ainda";
+    echo "não existem livros ainda testando eclipse ";
 });
 
 Route::get('/livrosctl', [LivroController::class,'index']);
 
-route::get('/livros/{isbn}', [LivroController::class , 'show']);
+route::get('/livrosid/{id}', [LivroController::class , 'show']);
